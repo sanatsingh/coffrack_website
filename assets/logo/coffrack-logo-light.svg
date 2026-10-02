@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="100%" height="100%">
+  <defs>
+    <linearGradient id="flameGrad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#ff7a1a"/>
+      <stop offset="100%" stop-color="#ffcf7a"/>
+    </linearGradient>
+    <mask id="crease" maskUnits="userSpaceOnUse" x="-50" y="-80" width="100" height="160">
+      <rect x="-50" y="-80" width="100" height="160" fill="#fff"/>
+      <path d="M0 -58C-24 -26 24 26 0 58" fill="none" stroke="#000" stroke-width="10" stroke-linecap="round"/>
+    </mask>
+  </defs>
+  <path d="M56 142h120v34a36 36 0 0 1-36 36H92a36 36 0 0 1-36-36z" fill="none" stroke="#1c1b1a" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M176 156h8a20 20 0 0 1 0 40h-12" fill="none" stroke="#1c1b1a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="44" y="226" width="148" height="10" rx="5" fill="#1c1b1a"/>
+  <ellipse transform="translate(116 88) rotate(-25) scale(.75)" rx="44" ry="66" fill="url(#flameGrad)" mask="url(#crease)"/>
+</svg>
