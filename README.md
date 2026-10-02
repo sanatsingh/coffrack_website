@@ -23,9 +23,9 @@ python3 -m http.server 8000
 
 Then open <http://localhost:8000>.
 
-## Publish with GitHub Pages
+## Hosting
 
-Settings → Pages → Build and deployment → **Deploy from a branch**, branch
-`main`, folder `/ (root)`. `.nojekyll` makes Pages serve the files as they are.
-All links are relative, so the site works at a project URL as well as on a
-custom domain.
+Served at <https://coffrack.in> by Cloudflare Pages, connected to this
+repository: every push to `main` deploys, and other branches get preview
+URLs. There is no build step; the output directory is the repository root.
+All links are relative, so the pages also work opened straight from disk.
