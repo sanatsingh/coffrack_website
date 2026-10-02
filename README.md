@@ -11,6 +11,7 @@ analytics.
 | `index.html` | Home page: what the app does |
 | `privacy/index.html` | Privacy policy, served at `/privacy` |
 | `tos/index.html` | Terms of use, served at `/tos` |
+| `404.html` | Not-found page |
 | `styles.css` | Styles; colours, radii and type mirror the app's design tokens |
 | `assets/logo/` | Coffrack logo (SVG and PNG) |
 | `assets/fonts/` | Inter, served locally, with its licence (SIL Open Font License 1.1) |
