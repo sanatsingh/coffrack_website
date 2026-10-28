@@ -294,15 +294,16 @@ h3 {
   color: var(--text-secondary);
 }
 
-/* ─── Phone mock ─────────────────────────────────────────────────────────── */
+/* ─── Screenshots ────────────────────────────────────────────────────────── */
 
-.phone {
+/* A phone frame around a real app screenshot (390 × 844 points). */
+.device {
   justify-self: center;
   width: 100%;
-  max-width: 330px;
-  aspect-ratio: 390 / 800;
-  border-radius: 44px;
-  padding: 12px;
+  max-width: 300px;
+  margin: 0;
+  padding: 10px;
+  border-radius: 46px;
   background: linear-gradient(160deg, #2a2b2f, #121315 60%);
   box-shadow:
     0 0 0 1px rgba(255, 255, 255, 0.08),
@@ -310,76 +311,95 @@ h3 {
     0 0 120px rgba(217, 142, 74, 0.12);
 }
 
-.screen {
-  position: relative;
-  height: 100%;
-  border-radius: 34px;
-  overflow: hidden;
+.device img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 390 / 844;
+  border-radius: 37px;
   background: var(--surface-0);
-  padding: 44px 16px 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  font-size: 13px;
 }
 
-.screen::before {
-  content: "";
-  position: absolute;
-  inset: 0 0 auto;
-  height: 260px;
-  background: radial-gradient(80% 70% at 30% 0%, rgba(217, 142, 74, 0.2), transparent 70%);
-  pointer-events: none;
+.hero-device {
+  max-width: 330px;
 }
 
-.screen > * {
-  position: relative;
+/* A Mac window around a desktop screenshot. */
+.window {
+  margin: 96px 0 0;
 }
 
-.notch {
-  position: absolute;
-  top: 12px;
-  left: 50%;
-  translate: -50% 0;
-  width: 96px;
-  height: 26px;
-  border-radius: 999px;
-  background: #000;
+.window img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  border-radius: var(--radius-sheet);
+  background: var(--surface-0);
+  box-shadow:
+    0 0 0 1px var(--border-strong),
+    0 40px 80px rgba(0, 0, 0, 0.6),
+    0 0 160px rgba(217, 142, 74, 0.1);
 }
 
-.screen .date {
+.window figcaption {
+  margin-top: 20px;
+  text-align: center;
   color: var(--text-secondary);
-  font-size: 12px;
 }
 
-.screen .hello {
-  font-size: 24px;
-  font-weight: 600;
+.showcase {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.showcase + .showcase {
+  margin-top: 96px;
+}
+
+.showcase:nth-of-type(even) .showcase-text {
+  order: 2;
+}
+
+.showcase-text {
+  max-width: 440px;
+  justify-self: center;
+}
+
+.showcase-text h3 {
+  font-size: 26px;
   letter-spacing: -0.02em;
-  line-height: 1.1;
-  margin-top: -6px;
 }
 
-.card {
-  background: var(--surface-2);
-  border: 1px solid var(--border-hairline);
-  border-radius: var(--radius-card);
-  padding: 14px;
+.showcase-text p {
+  margin: 12px 0 0;
+  color: var(--text-secondary);
+  font-size: 17px;
 }
+
+.credits {
+  max-width: 760px;
+  margin: 48px auto 0;
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-tertiary);
+}
+
+.credits a {
+  color: var(--text-secondary);
+  text-decoration: underline;
+  text-decoration-color: var(--border-strong);
+}
+
+/* ─── Small parts ────────────────────────────────────────────────────────── */
 
 .row {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-}
-
-.label {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--text-tertiary);
 }
 
 .strong {
@@ -436,95 +456,6 @@ h3 {
   color: var(--fresh-on-peak);
 }
 
-.track {
-  height: 6px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.08);
-  overflow: hidden;
-  margin-top: 10px;
-}
-
-.track > span {
-  display: block;
-  height: 100%;
-  border-radius: inherit;
-}
-
-.bag {
-  width: 38px;
-  height: 46px;
-  border-radius: 8px 8px 10px 10px;
-  background: linear-gradient(180deg, #9a6b3f, #5e3b22);
-  flex: none;
-  position: relative;
-}
-
-.bag::after {
-  content: "";
-  position: absolute;
-  left: 7px;
-  right: 7px;
-  top: 14px;
-  height: 14px;
-  border-radius: 3px;
-  background: rgba(242, 241, 238, 0.85);
-}
-
-.timer {
-  font-size: 40px;
-  font-weight: 500;
-  letter-spacing: -0.03em;
-  font-variant-numeric: tabular-nums;
-  line-height: 1;
-}
-
-.steps {
-  display: flex;
-  gap: 4px;
-  margin-top: 12px;
-}
-
-.steps span {
-  flex: 1;
-  height: 4px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.08);
-}
-
-.steps span.done {
-  background: var(--accent);
-}
-
-.steps span.now {
-  background: linear-gradient(90deg, var(--accent) 55%, rgba(255, 255, 255, 0.08) 55%);
-}
-
-.btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 40px;
-  border-radius: var(--radius-control);
-  background: var(--accent);
-  color: var(--text-on-accent);
-  font-weight: 600;
-  font-size: 13px;
-  box-shadow: 0 0 24px var(--accent-glow);
-}
-
-.tabbar {
-  margin-top: auto;
-  display: flex;
-  justify-content: space-around;
-  padding: 10px 0 2px;
-  border-top: 1px solid var(--border-hairline);
-  font-size: 10px;
-  color: var(--text-tertiary);
-}
-
-.tabbar span.on {
-  color: var(--accent-text);
-}
 
 /* ─── Sections ───────────────────────────────────────────────────────────── */
 
@@ -714,6 +645,11 @@ section {
 .feature p {
   margin: 8px 0 0;
   color: var(--text-secondary);
+}
+
+.feature .list {
+  margin-top: auto;
+  font-size: 13px;
 }
 
 .bubbles {
@@ -909,6 +845,23 @@ section {
     gap: 56px;
   }
 
+  .showcase {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .showcase:nth-of-type(even) .showcase-text {
+    order: 0;
+  }
+
+  .showcase-text {
+    justify-self: start;
+  }
+
+  .window {
+    margin-top: 72px;
+  }
+
   .pillars,
   .split {
     grid-template-columns: 1fr;
@@ -948,6 +901,24 @@ section {
 
   .tiles {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .device {
+    max-width: 260px;
+    padding: 8px;
+    border-radius: 40px;
+  }
+
+  .device img {
+    border-radius: 33px;
+  }
+
+  .showcase + .showcase {
+    margin-top: 72px;
+  }
+
+  .window img {
+    border-radius: var(--radius-card);
   }
 }
 

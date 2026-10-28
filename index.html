@@ -28,6 +28,7 @@
       </a>
       <nav class="nav" aria-label="Main">
         <a href="#features">Features</a>
+        <a class="hide-sm" href="#tour">Tour</a>
         <a class="hide-sm" href="#freshness">Freshness</a>
         <a href="privacy/index.html">Privacy</a>
       </nav>
@@ -44,7 +45,7 @@
           <p class="lede">
             Learn the craft, follow a method step by step, and keep track of
             every bag, grinder and cup. Coffrack works offline, and your
-            coffee log stays on your device.
+            coffee log stays on your device unless you turn on sync.
           </p>
           <div class="platforms" aria-label="Platforms">
             <span class="platform">
@@ -62,58 +63,9 @@
           </div>
         </div>
 
-        <!-- Illustrative home screen, built in HTML so it stays sharp. -->
-        <div class="phone" role="img" aria-label="The Coffrack home screen showing a bag at peak freshness and a V60 brew in progress">
-          <div class="screen">
-            <span class="notch"></span>
-            <div>
-              <div class="date">Tuesday, 30 September</div>
-            </div>
-            <div class="hello">Good morning</div>
-
-            <div class="card">
-              <div class="row">
-                <div class="row" style="justify-content:flex-start">
-                  <span class="bag" aria-hidden="true"></span>
-                  <div>
-                    <div class="strong">Hill Estate, washed</div>
-                    <div class="small">Medium roast · 162 g left</div>
-                  </div>
-                </div>
-                <span class="chip peak">Peak</span>
-              </div>
-              <div class="track"><span style="width:52%;background:var(--fresh-peak)"></span></div>
-              <div class="row small" style="margin-top:8px"><span>Day 11 since roast</span><span>~10 more peak days</span></div>
-            </div>
-
-            <div class="card">
-              <div class="row">
-                <span class="label">Brewing · V60</span>
-                <span class="small">15 g : 250 g · 1:16.7</span>
-              </div>
-              <div class="row" style="margin-top:12px;align-items:flex-end">
-                <span class="timer">1:42</span>
-                <span class="small" style="text-align:right">Pour to 150 g<br>next at 1:45</span>
-              </div>
-              <div class="steps" aria-hidden="true"><span class="done"></span><span class="done"></span><span class="now"></span><span></span><span></span></div>
-            </div>
-
-            <div class="card">
-              <div class="row">
-                <span class="label">Last cup</span>
-                <span class="small">Yesterday</span>
-              </div>
-              <div style="margin-top:8px" class="strong">Sweet, bright, a little thin</div>
-              <div class="small">Try 2 clicks finer next time</div>
-            </div>
-
-            <span class="btn">Log a brew</span>
-
-            <div class="tabbar" aria-hidden="true">
-              <span class="on">Home</span><span>Learn</span><span>Methods</span><span>Track</span><span>Roasters</span>
-            </div>
-          </div>
-        </div>
+        <figure class="device hero-device">
+          <img src="assets/screens/home.webp" width="780" height="1688" alt="The Coffrack home screen: today's suggested bag, open bags with their freshness, and recent brews.">
+        </figure>
       </div>
     </div>
 
@@ -134,7 +86,7 @@
             <div>
               <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16M8 7h8M8 11h6"/></svg></div>
               <h3 style="margin-top:16px">Learn</h3>
-              <p>Visual, bite-sized coffee knowledge in nine short sections, from origin and altitude to grind, water and ratio. Understand why a cup tastes the way it does.</p>
+              <p>Visual, bite-sized coffee knowledge in ten short sections, from origin and altitude to grind, water and ratio, with photos and sources. Understand why a cup tastes the way it does.</p>
             </div>
             <div class="demo tiles" aria-hidden="true">
               <div class="tile"><b>Origin</b>Where it grew</div>
@@ -163,7 +115,7 @@
             <div>
               <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h10l1 4v12a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V7z"/><path d="M6 7h12M10 12h4"/></svg></div>
               <h3 style="margin-top:16px">Track</h3>
-              <p>Keep your bags with their freshness, your grinders and gear, and every brew with how it tasted. A dose, ratio and water calculator helps while you brew, and your history shows what worked.</p>
+              <p>Keep your bags with a photo, their freshness and your own rating, your grinders and gear, and every brew with how it tasted. A dose, ratio and water calculator helps while you brew, and your history shows what worked.</p>
             </div>
             <div class="demo list" aria-hidden="true">
               <div class="row"><span>Hill Estate, washed</span><span class="chip peak">Peak</span></div>
@@ -185,6 +137,73 @@
             </div>
           </article>
         </div>
+      </div>
+    </section>
+
+    <!-- A tour of the app -->
+    <section id="tour">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="overline">A closer look</p>
+          <h2>From the first pour to the last bean.</h2>
+        </div>
+
+        <div class="showcase">
+          <div class="showcase-text">
+            <h3>Brew stage by stage</h3>
+            <p>Recipes are a list of stages: the bloom, each pour and, on a Hario Switch, when to close and open the valve. The timer walks you through them with the weight to pour to, how long is left and what comes next.</p>
+          </div>
+          <figure class="device">
+            <img src="assets/screens/brewing.webp" width="780" height="1688" loading="lazy" alt="A Hario Switch brew in progress: stage 1 of 4, bloom to 40 g with the valve closed, and the next pour at 0:30.">
+          </figure>
+        </div>
+
+        <div class="showcase">
+          <div class="showcase-text">
+            <h3>Every bag at a glance</h3>
+            <p>Photograph the bag, then see how much is left, what you paid and where it is on its freshness curve. Rate it out of ten once you know it. Used-up bags move to the archive, ready to compare with the next one.</p>
+          </div>
+          <figure class="device">
+            <img src="assets/screens/bag.webp" width="780" height="1688" loading="lazy" alt="A bag's page with its photo, 205 g left, 3 brews, the price paid, a rating of 9 out of 10 and its freshness at day 9.">
+          </figure>
+        </div>
+
+        <div class="showcase">
+          <div class="showcase-text">
+            <h3>Remember how each cup tasted</h3>
+            <p>Rate the cup, score acidity, sweetness, body and bitterness, add a photo and a note. Got the grind or a pour time wrong? Fix the brew afterwards, and brew it again in one tap.</p>
+          </div>
+          <figure class="device">
+            <img src="assets/screens/brew_tasting.webp" width="780" height="1688" loading="lazy" alt="A logged brew with its grinder setting, a 9 out of 10 tasting, a photo of the cup, flavour scores and the note 'Juicy and sweet'.">
+          </figure>
+        </div>
+
+        <div class="showcase">
+          <div class="showcase-text">
+            <h3>Learn where it comes from</h3>
+            <p>See the coffee belt on a world map, how altitude shapes flavour, and what each process does to the cup, with photos and sources for every section.</p>
+          </div>
+          <figure class="device">
+            <img src="assets/screens/learn_origin.webp" width="780" height="1688" loading="lazy" alt="The Origin section of Learn, with a world map of the coffee belt and the main growing regions.">
+          </figure>
+        </div>
+
+        <figure class="window">
+          <img src="assets/screens/mac_home.webp" width="1600" height="1000" loading="lazy" alt="Coffrack on a Mac: a sidebar with Brew, Track and Learn, today's suggestion, open bags and recent brews.">
+          <figcaption>On a Mac, everything sits one click away in the sidebar.</figcaption>
+        </figure>
+
+        <p class="credits">
+          Screenshots show made-up beans and brews. Photos in them:
+          <a href="https://commons.wikimedia.org/wiki/File:Macro_close_up_look_of_roasted_coffee_beans.jpg">roasted beans</a> by Jameswasswa,
+          <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>;
+          <a href="https://commons.wikimedia.org/wiki/File:Pourover_using_a_cupping_brewer_at_NOLA,_Peckham,_London_(50661427221).jpg">pour-over</a> by Bex Walton,
+          <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>;
+          <a href="https://commons.wikimedia.org/wiki/File:Coffee_farm_-_Flickr_-_USDAgov.jpg">coffee farm</a> by the U.S. Department of Agriculture,
+          <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>;
+          <a href="https://commons.wikimedia.org/wiki/File:Coffee-cherries-green-coffee-tarrazu-costa-rica.jpg">coffee cherries</a> and
+          <a href="https://commons.wikimedia.org/wiki/File:Coffee_grinder_with_coffee.jpg">grinder</a>, public domain.
+        </p>
       </div>
     </section>
 
@@ -219,16 +238,13 @@
         <div class="split">
           <article class="feature">
             <div>
-              <h3>Recipes and a live pour timer</h3>
-              <p>Save the brews you plan to repeat. While you brew, log each pour and lap as it happens, so you can see exactly what changed from one cup to the next.</p>
+              <h3>Sync across your devices</h3>
+              <p>Sign in with Google and switch on sync to keep the same bags, brews, recipes and tasting notes on your iPhone, Android phone and Mac. A brew logged on one shows up on the others in moments. Sync stays off until you turn it on.</p>
             </div>
-            <div class="card" aria-hidden="true">
-              <div class="row"><span class="label">Morning V60</span><span class="small">15 g · 250 g · 93 °C</span></div>
-              <div class="row" style="margin-top:14px;align-items:flex-end">
-                <span class="timer">2:58</span>
-                <span class="small" style="text-align:right">Lap 4 · drawdown<br>target 3:00</span>
-              </div>
-              <div class="steps"><span class="done"></span><span class="done"></span><span class="done"></span><span class="now"></span></div>
+            <div class="list" aria-hidden="true">
+              <div class="row"><span>iPhone</span><span class="chip peak">Up to date</span></div>
+              <div class="row"><span>Mac</span><span class="chip peak">Up to date</span></div>
+              <div class="row"><span>Android</span><span class="small">Synced just now</span></div>
             </div>
           </article>
 
@@ -262,7 +278,7 @@
           <div>
             <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></div>
             <h3>Sign in only if you want to</h3>
-            <p>An account is optional. Sign in with Google to keep your profile, with sync across iPhone, Android and Mac on the way.</p>
+            <p>An account is optional. Sign in with Google if you want sync across iPhone, Android and Mac; signing in never sends your log anywhere until you switch sync on.</p>
           </div>
           <div>
             <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M12 7v5l3 2"/></svg></div>
