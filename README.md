@@ -14,6 +14,7 @@ analytics.
 | `404.html` | Not-found page |
 | `styles.css` | Styles; colours, radii and type mirror the app's design tokens |
 | `assets/logo/` | Coffrack logo (SVG and PNG) |
+| `assets/screens/` | App screenshots (WebP), rendered from the app with made-up data; credits for the photos in them are on the home page |
 | `assets/fonts/` | Inter, served locally, with its licence (SIL Open Font License 1.1) |
 
 ## Preview locally

@@ -29,7 +29,7 @@
 
   <main id="main" class="wrap doc">
     <h1>Privacy policy</h1>
-    <p class="updated">Effective 30 September 2026</p>
+    <p class="updated">Effective 29 October 2026</p>
 
     <p>
       Coffrack is a coffee companion app for iPhone, Android and Mac. This
@@ -43,9 +43,10 @@
     <p>
       Everything you add to Coffrack is saved in a database on your device:
       beans and bags, roast dates, grinders and equipment, prices you enter,
-      brews, recipes, tasting notes and your settings. None of it is sent to
-      us. The app works fully offline without an account. Uninstalling the app
-      removes this data.
+      brews, recipes, tasting notes, photos of your bags and cups, and your
+      settings. None of it is sent to us unless you turn on sync. The app
+      works fully offline without an account. Uninstalling the app removes
+      this data.
     </p>
 
     <h2>Signing in with Google</h2>
@@ -86,11 +87,28 @@
 
     <h2>Sync across devices</h2>
     <p>
-      Syncing your coffee log between devices is planned but not yet
-      available. When it arrives, sync will be optional. The data you choose
-      to sync (such as beans, brews, recipes, tasting notes and equipment)
-      will be stored in your account with Supabase, and only your account can
-      read or change it through the app.
+      Sync is optional and off by default. Signing in does not send any of
+      your coffee log; nothing is uploaded until you switch sync on in
+      Settings, and the choice is kept separately for each account on each
+      device.
+    </p>
+    <p>
+      When sync is on, these are stored in your account with Supabase and
+      copied to your other signed-in devices that have sync on: your beans
+      and bags (including roast dates, prices and ratings), grinders and
+      equipment, recipes, brews, tasting notes, and changes to how much is
+      left in a bag. Roasters and coffees from the directory that your bags
+      refer to are synced with them. Only your account can read or change
+      this data.
+    </p>
+    <p>
+      <strong>Photos are not synced.</strong> Pictures of your bags and cups
+      stay on the device where you added them.
+    </p>
+    <p>
+      Switching sync off stops that device from sending or receiving changes.
+      Data already synced stays in your account until you delete your
+      account (see below).
     </p>
 
     <h2>How we use synced data to improve Coffrack</h2>
@@ -111,9 +129,9 @@
       <li>Data that stays only on your device is never collected.</li>
     </ul>
     <p>
-      You can opt out at any time by emailing
-      <a href="mailto:sanat@coffrack.in">sanat@coffrack.in</a>; we will also
-      add a setting in the app when sync launches. Opting out stops future use
+      You can opt out at any time by turning off <strong>Help improve
+      Coffrack</strong> in the app's sync settings, or by emailing
+      <a href="mailto:sanat@coffrack.in">sanat@coffrack.in</a>. Opting out stops future use
       of your data for this purpose, and deleting your account removes your
       synced data. Data that has already been aggregated with other users'
       data cannot be separated back out.
@@ -146,7 +164,7 @@
 
     <h2>Service providers</h2>
     <ul>
-      <li><strong>Supabase</strong>: sign-in and account data storage.</li>
+      <li><strong>Supabase</strong>: sign-in, account data and, when you turn on sync, your synced coffee data.</li>
       <li><strong>Google</strong>: sign-in, when you choose Continue with Google.</li>
       <li><strong>Cloudflare</strong>: hosts this website and, like any web host, processes the technical data of your visit (such as IP address) to deliver pages and protect against abuse.</li>
     </ul>
@@ -155,7 +173,7 @@
     <p>
       We keep your account data for as long as you have an account. You can
       sign out at any time from Settings. To delete your account and all
-      account data held with Supabase, email
+      account data held with Supabase, including your synced coffee data, email
       <a href="mailto:sanat@coffrack.in">sanat@coffrack.in</a> from the address
       you signed in with, and we will delete it within 30 days. Data stored
       only on your device is removed when you delete the app.
